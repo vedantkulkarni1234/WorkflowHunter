@@ -1,0 +1,30 @@
+{
+  "theme": "dark",
+  "autosave_enabled": true,
+  "autosave_interval": 60000,
+  "animation_enabled": false,
+  "animation_speed": 1.0,
+  "adaptive_interface_enabled": true,
+  "user_preferences": {
+    "general": {
+      "frequently_used_steps": {},
+      "frequently_used_templates": {
+        "Subdomain Reconnaissance": 3
+      },
+      "preferred_tools": {},
+      "ui_layout_preferences": {
+        "toggle_animation": 3,
+        "recommended_template": 1
+      }
+    },
+    "recommendations": {
+      "steps": [],
+      "templates": [
+        [
+          "Subdomain Reconnaissance",
+          3
+        ]
+      ]
+    }
+  }
+}

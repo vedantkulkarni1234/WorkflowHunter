@@ -1,0 +1,100 @@
+{
+  "id": "699b5106-0959-4d77-a4c1-2da4e54fd106",
+  "name": "Subdomain Reconnaissance",
+  "description": "Comprehensive subdomain discovery and enumeration",
+  "version": "1.0",
+  "author": "",
+  "tags": [
+    "reconnaissance",
+    "subdomain",
+    "discovery"
+  ],
+  "steps": [
+    {
+      "id": "ef6f6d46-9a5c-4401-84c7-213fc97f6e9a",
+      "name": "Subfinder",
+      "description": "",
+      "command": "subfinder -d {target} -o {output_dir}/subfinder.txt",
+      "working_directory": "",
+      "environment_vars": {},
+      "input_files": [],
+      "output_files": [],
+      "timeout": 300,
+      "retry_count": 0,
+      "dependencies": [],
+      "enabled": true,
+      "step_type": "shell",
+      "custom_script": "",
+      "notes": "",
+      "pos_x": 488.0,
+      "pos_y": 184.0
+    },
+    {
+      "id": "ed343324-0cd7-4c4a-8bda-21bb78dcf21e",
+      "name": "assetfinder",
+      "description": "",
+      "command": "assetfinder --subs-only {output_dir}/assetfinder.txt",
+      "working_directory": "",
+      "environment_vars": {},
+      "input_files": [],
+      "output_files": [],
+      "timeout": 300,
+      "retry_count": 0,
+      "dependencies": [],
+      "enabled": true,
+      "step_type": "shell",
+      "custom_script": "",
+      "notes": "",
+      "pos_x": 491.0,
+      "pos_y": 267.0
+    },
+    {
+      "id": "f355188a-785b-4ba0-b526-fb0399c33c64",
+      "name": "Combine",
+      "description": "",
+      "command": "cat {output_dir}/*.txt | sort -u > {output_dir}/all.txt",
+      "working_directory": "",
+      "environment_vars": {},
+      "input_files": [],
+      "output_files": [],
+      "timeout": 300,
+      "retry_count": 0,
+      "dependencies": [
+        "ef6f6d46-9a5c-4401-84c7-213fc97f6e9a",
+        "ed343324-0cd7-4c4a-8bda-21bb78dcf21e"
+      ],
+      "enabled": true,
+      "step_type": "shell",
+      "custom_script": "",
+      "notes": "",
+      "pos_x": 736.0,
+      "pos_y": 226.0
+    },
+    {
+      "id": "bc036d27-5b15-4c4e-92fa-7696810c842f",
+      "name": "Httpx",
+      "description": "",
+      "command": "httpx -l {output_dir}/all.txt -o {output_dir}/alive.txt",
+      "working_directory": "",
+      "environment_vars": {},
+      "input_files": [],
+      "output_files": [],
+      "timeout": 300,
+      "retry_count": 0,
+      "dependencies": [
+        "f355188a-785b-4ba0-b526-fb0399c33c64"
+      ],
+      "enabled": true,
+      "step_type": "shell",
+      "custom_script": "",
+      "notes": "",
+      "pos_x": 961.0,
+      "pos_y": 226.0
+    }
+  ],
+  "execution_mode": "sequential",
+  "global_timeout": 3600,
+  "global_env_vars": {},
+  "created_at": "2025-09-06T01:22:20.448823",
+  "modified_at": "2025-09-06T01:22:20.448829"
+}

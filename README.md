@@ -20,9 +20,9 @@ A powerful visual workflow generator specifically designed for bug bounty hunter
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="screenshots/startup.png" alt="Application Startup Screen" width="45%" />
-  <img src="screenshots/main_ui.png" alt="Main User Interface" width="45%" />
-  <img src="screenshots/running_tool.png" alt="Running Tool Interface" width="90%" />
+<img width="798" height="600" alt="Image" src="https://github.com/user-attachments/assets/b4c28c85-be32-40a2-ba53-e3c3d5d0e0b5" />
+<img width="1203" height="872" alt="Image" src="https://github.com/user-attachments/assets/263c4cb3-4c0c-4479-965b-30a9591870c5" />
+<img width="1854" height="1013" alt="Image" src="https://github.com/user-attachments/assets/0f698d99-b910-4e66-a09f-be57ae728514" />
 </div>
 
 ## 🎥 Demo Video

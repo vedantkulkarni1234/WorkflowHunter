@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/your-video-link-here.mp4
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bug-bounty-workflow-generator.git
+   git clone https://github.com/vedantkulkarni1234/WorkflowHunter.git
    cd bug-bounty-workflow-generator
    ```
 
@@ -121,15 +121,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Vedant K**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/vedant-k-xxxxx/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-blue)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/vedant-kulkarni-a338b5224/)
 
 ## 🙏 Acknowledgments
 
 - Inspired by the need for better workflow management in bug bounty hunting
 - Built with Python and Tkinter for cross-platform compatibility
-- Special thanks to the open-source community for the tools that make this possible
-
+  
 ## 🔧 Troubleshooting
 
 If you encounter any issues:
